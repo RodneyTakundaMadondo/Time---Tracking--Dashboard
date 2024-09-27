@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+    <main class="main">
+      <div class="main__container">
+
+        <div class="main__display">
+
+          <div class="color-container">
+            <div class="img-container">
+              <img src="./images/image-jeremy.png" alt="">
+            </div>
+            <div class="col2">
+              <span class="fOpacity">Report for</span>
+              <span class="username">Jeremy Robson</span>
+            </div>
+          </div>
+
+          <div class="flex">
+            <span class="fOpacity" id="daily">Daily</span>
+            <span class="fOpacity" id="weekly">Weekly</span>
+            <span class="fOpacity" id="monthly">Monthly</span>
+          </div>
+        </div>
+
+        <div class="activity ">
+          <div class="activity__icon-container work">
+            <img src="./images/icon-work.svg" alt="work bag" class="">
+          </div>
+          <div class="activity__description">
+            <div class="between">
+                <h3>Work</h3>
+                <div>
+                  <img src="./images/icon-ellipsis.svg" alt="">
+                </div>
+            </div>
+            <div class="times">
+              <p class="hours">
+                <span class="current-hours"></span>
+              </p>
+              <p class="last-week fOpacity">
+                Last Week - <span class="prev-hours"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--play-->
+        <div class="activity ">
+          <div class="activity__icon-container play">
+            <img src="./images/icon-play.svg" alt="controller" class="">
+          </div>
+          <div class="activity__description">
+            <div class="between">
+                <h3>play</h3>
+                <div>
+                  <img src="./images/icon-ellipsis.svg" alt="">
+                </div>
+            </div>
+            <div class="times">
+              <p class="hours">
+                <span class="current-hours"></span>
+              </p>
+              <p class="last-week fOpacity">
+                Last Week - <span class="prev-hours"></span>
+              </p>
+            </div>
+          </div>
+        </div>  
+        <!-- study -->
+        <div class="activity ">
+          <div class="activity__icon-container study">
+            <img src="./images/icon-study.svg" alt="book" class="">
+          </div>
+          <div class="activity__description">
+            <div class="between">
+                <h3>Study</h3>
+                <div>
+                  <img src="./images/icon-ellipsis.svg" alt="">
+                </div>
+            </div>
+            <div class="times">
+              <p class="hours">
+                <span class="current-hours"></span>
+              </p>
+              <p class="last-week fOpacity">
+                Last Week - <span class="prev-hours"></span>
+              </p>
+            </div>
+          </div>
+        </div>  
+        <!-- exercise -->
+        <div class="activity ">
+          <div class="activity__icon-container exercise">
+            <img src="./images/icon-exercise.svg" alt="running man" class="">
+          </div>
+          <div class="activity__description">
+            <div class="between">
+                <h3>Exercise</h3>
+                <div>
+                  <img src="./images/icon-ellipsis.svg" alt="">
+                </div>
+            </div>
+            <div class="times">
+              <p class="hours">
+                <span class="current-hours"></span>
+              </p>
+              <p class="last-week fOpacity">
+                Last Week - <span class="prev-hours"></span>
+              </p>
+            </div>
+          </div>
+        </div>  
+        <!-- social -->
+        <div class="activity ">
+          <div class="activity__icon-container social">
+            <img src="./images/icon-social.svg" alt="chat bubbles" class="">
+          </div>
+          <div class="activity__description">
+            <div class="between">
+                <h3>Social</h3>
+                <div>
+                  <img src="./images/icon-ellipsis.svg" alt="">
+                </div>
+            </div>
+            <div class="times">
+              <p class="hours">
+                <span class="current-hours"></span>
+              </p>
+              <p class="last-week fOpacity">
+                Last Week - <span class="prev-hours"></span>
+              </p>
+            </div>
+          </div>
+        </div>  
+        <!-- self care -->
+        <div class="activity ">
+          <div class="activity__icon-container self-care">
+            <img src="./images/icon-self-care.svg" alt="heart with addition symbol" class="">
+          </div>
+          <div class="activity__description">
+            <div class="between">
+                <h3>Self Care</h3>
+                <div>
+                  <img src="./images/icon-ellipsis.svg" alt="">
+                </div>
+            </div>
+            <div class="times">
+              <p class="hours">
+                <span class="current-hours"></span>
+              </p>
+              <p class="last-week fOpacity">
+                Last Week - <span class="prev-hours"></span>
+              </p>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </main>
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>

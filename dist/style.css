@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+}
+
+.fOpacity {
+  opacity: 0.5;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.main__container {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  width: min(1300px, 100% - 2rem);
+  margin-block: 2rem;
+  margin-inline: auto;
+  gap: 1rem;
+}
+.main__display {
+  background: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  padding-bottom: 1.5rem;
+}
+.main__display .color-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  background-color: hsl(235, 45%, 61%);
+  padding: 2rem;
+}
+.main__display .color-container .img-container {
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.main__display .color-container .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__display .color-container .col2 {
+  text-align: center;
+  color: white;
+}
+.main__display .color-container .col2 span {
+  display: block;
+}
+.main__display .flex {
+  display: flex;
+  justify-content: space-around;
+}
+.main__display .flex .fOpacity {
+  color: white;
+}
+.main__display .flex span {
+  cursor: pointer;
+  color: white;
+}
+.main .activity {
+  position: relative;
+  background-color: hsl(226, 43%, 10%);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+}
+.main .activity__icon-container {
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+.main .activity__icon-container img {
+  position: absolute;
+  top: -0.5rem;
+  right: 1rem;
+}
+.main .activity__description {
+  position: absolute;
+  min-height: 13.5rem;
+  bottom: 0;
+  width: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  padding: 2rem 2rem 0 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .activity__description .between {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.main .activity__description .times {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.main .activity__description .times .hours {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.main .work {
+  background-color: hsl(15, 100%, 70%);
+}
+.main .play {
+  background-color: hsl(195, 74%, 62%);
+}
+.main .study {
+  background-color: hsl(348, 100%, 68%);
+}
+.main .exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.main .exercise img {
+  top: 0rem;
+}
+.main .social {
+  background-color: hsl(264, 64%, 52%);
+}
+.main .self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media (min-width: 213px) {
+  .main .activity__description {
+    min-height: 12.5rem;
+  }
+}
+@media (min-width: 292px) {
+  .main__display .color-container {
+    justify-content: flex-start;
+  }
+  .main__display .color-container .col2 {
+    text-align: left;
+    font-size: 1.3 rem;
+  }
+  .main .activity__description {
+    min-height: 9.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .main__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .main__display {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1024px) {
+  .main__container {
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 35rem;
+    grid-template-rows: repeat(2, 16rem);
+  }
+  .main__display {
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+  .main__display .color-container {
+    min-height: 20rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .main__display .color-container .img-container {
+    height: 7rem;
+    width: 7rem;
+    border: 5px solid white;
+  }
+  .main__display .color-container .col2 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main__display .color-container .col2 .username {
+    font-size: 2.5rem;
+  }
+  .main__display .color-container .col2 span:first-child {
+    font-size: 1.5rem;
+  }
+  .main__display .flex {
+    flex-direction: column;
+    padding: 0 0 0 2rem;
+    gap: 1rem;
+  }
+  .main__display .flex span:hover {
+    opacity: 1;
+  }
+  .main .activity__description {
+    min-height: 13.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
